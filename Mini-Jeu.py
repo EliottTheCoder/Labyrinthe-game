@@ -1,5 +1,5 @@
-import random 
-import os
+from random import randrange
+from os import system
 
 print "\n\n************************ LE LABYRINTHE ************************"
 print "\n\nBonjour a vous. Vous etes tombes par hasard dans un labyrinthe."
@@ -37,7 +37,7 @@ while(continuerPartie): # Boucle principale du jeu: le joueur choisit s'il pours
 			if porteChoisie > 3:
 				print "Le nombre saisi est superieur a 3.\n"
 		
-		bonnePorte = random.randrange(1, 4) # Genere un nombre pseudo-aleatoir avec le module random
+		bonnePorte = randrange(1, 4) # Genere un nombre pseudo-aleatoir avec le module random
 
 		if porteChoisie == bonnePorte:
 			niveau += 1
@@ -73,4 +73,4 @@ while(continuerPartie): # Boucle principale du jeu: le joueur choisit s'il pours
 		
 print "\nVous quittez la partie."
 		
-os.system("Pause")
+system("Pause")
