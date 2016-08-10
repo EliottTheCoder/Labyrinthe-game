@@ -54,7 +54,7 @@ while(continuerPartie): # Boucle principale du jeu: le joueur choisit s'il pours
 	
 	partie = -1
 	while partie < 0 or partie > 1: # 4e boucle: teste l'entree du joueur
-		print "Voulez vous recommencer ? Oui (1), Non (0)"
+		print "\nVoulez vous recommencer ? Oui (1), Non (0)"
 		partie = raw_input("> ")
 		try :
 			partie = int(partie)
